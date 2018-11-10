@@ -36,6 +36,7 @@ class Solution(object):
 a= Solution()
 for row in reversed(range(a.ROWS-1)):
 	a.calcRow(row)
+
 print a.maze
 print "Iterations: " + str(a.count)
 print "Min Path Is: " + str(min([val for val in a.maze[0] if val>0 ]))
